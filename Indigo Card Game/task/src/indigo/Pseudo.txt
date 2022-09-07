@@ -1,0 +1,42 @@
+//INITIAL SETUP
+Print: Indigo Card Game
+Fun:    Prompt for first
+            if valid, assigns first or not, else asks again
+
+<TableStack> pulls 4 card from the deck
+
+Print: initial table state
+
+//GAME LOOP
+
+Print: <TableStack>.size cards on the table, and the top card is <TableStack>.last
+//IF <GameDeck>.isEmpty()
+end loop
+//IF <playerHand>.isEmpty() && <opponentHand>.isEmpty()
+Fun: Deal hands
+
+//on PLAYER TURN
+
+Print: Cards in hand: <PlayerCards>
+
+Ask for card
+    if exit, exit
+    if null, ask again
+    if within range, play card
+
+Fun: take input
+Print cards
+return input
+    -1 if exit
+    cardIndex if valid
+    null otherwise
+
+
+//on COMPUTER TURN
+
+Fun: Computer plays card
+    Plays first card //TODO: flesh out AI
+    Print: Computer plays <card played>
+
+
+Print: Game Over
